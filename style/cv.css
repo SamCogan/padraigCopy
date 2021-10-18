@@ -1,0 +1,64 @@
+body{
+	color:navy;
+	font-family:'Georgia';	
+	background:skyblue;
+	text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+p{
+	margin:1px;
+}
+
+.shadow {
+	text-shadow: 2px 2px white;
+  }
+
+  #shadowbox{
+	box-shadow: 5px 5px white;
+  }
+
+  #leftAllign{
+	list-style-position: outside;
+  }
+
+  .keyword{
+	text-decoration: underline;
+	font-weight: bold;
+  }
+
+@media(min-width:1000px){
+	.container1{
+		display:flex;
+		align-items:flex-end; /* Table alligned so bottom of each is flush */
+		flex-direction:row;
+		justify-content:center;
+		flex-basis:100%;
+		/* color:white; */
+	}
+	/* Interestingly, boxes lose their order when window size reduced under 1000px*/
+}
+
+.box1{
+	/* flex:1; */ 
+	border: 1px black solid;
+	order:2;
+	flex-basis:15%;
+  }
+
+.box2{
+	/* flex:1; */ 
+	border: 1px black solid; 
+	order:3;
+	flex-basis:15%;
+}
+
+.box3{
+	/* flex:1; */ 
+	border: 1px black solid;
+	order:1;
+	flex-basis:15%;
+}
